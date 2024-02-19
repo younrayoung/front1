@@ -1,0 +1,68 @@
+/* 
+    메뉴얼 교육
+파일명 : script.js
+기능 : 기본적으로 자주 사용이 되는 웹페이지의 기본 스타일시트를 적용시킬 목적
+작성일 : 2024.1.5일
+작성자 : 윤라영
+
+*/
+
+body{
+    font-size: 9px;
+    color: black;
+    line-height: 160%; /* 윗줄과 아랫줄 사이의 간격 */
+    font-family: 굴림, verdana, tahoma ;
+}
+td{
+    ont-size: 9px;
+    color: black;
+    line-height: 160%; /* 윗줄과 아랫줄 사이의 간격 */
+    font-family: 굴림, verdana, tahoma ;
+}
+select{
+    ont-size: 9px;
+    color: black;
+    line-height: 160%; /* 윗줄과 아랫줄 사이의 간격 */
+    font-family: 굴림, verdana, tahoma ;
+}
+div{
+    ont-size: 9px;
+    color: black;
+    line-height: 160%; /* 윗줄과 아랫줄 사이의 간격 */
+    font-family: 굴림, verdana, tahoma ;
+}
+form{
+    ont-size: 9px;
+    color: black;
+    line-height: 160%; /* 윗줄과 아랫줄 사이의 간격 */
+    font-family: 굴림, verdana, tahoma ;
+}
+textarea{
+    /* 추가 */
+    border-right: 1px solid #999999;
+    border-top: 1px solid #999999;
+    border-left: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+
+    ont-size: 9px;
+    color: black;
+    line-height: 160%; /* 윗줄과 아랫줄 사이의 간격 */
+    font-family: 굴림, verdana, tahoma ;
+    background-color: white;
+}
+input{
+/* 추가 */
+border-right: 1px solid #999999;
+border-top: 1px solid #999999;
+border-left: 1px solid #999999;
+border-bottom: 1px solid #999999;
+
+ont-size: 9px;
+color: black;
+line-height: 160%; /* 윗줄과 아랫줄 사이의 간격 */
+font-family: 굴림, verdana, tahoma ;
+background-color: white;
+}
+A:link{text-decoration: none; color: #696969; }
+A:hover{text-decoration: yes; color: #66CCFF;}
+A:visited{text-decoration: none; color: #330066;}

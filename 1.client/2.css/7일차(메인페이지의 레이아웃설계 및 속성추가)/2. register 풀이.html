@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. register 풀이-6일차 과제.html</title>
+    <style>
+        .title{
+            font-size: 15pt;
+            font-weight: bold;
+            text-align: center;
+            color: blue;
+        }
+        .td2{
+            width:16%;
+        }
+        .td3{
+            width:57%;
+        }
+        .td4{
+            width:27%;
+        }
+        .td5{
+            text-align: center; /* 버튼의 value도 글자이기에 가운데 정렬 */
+        }
+    </style>
+</head>
+<body>
+    <!-- table>tr>td (1x1) -->
+    <br><br> <!--해도되고 안해도 됨 -->
+    <table align="center" border="0" cellspacing="0" cellpadding="5"> <!--outer table-->
+        <tr>
+            <td class="td1">
+                <!-- inner table -->
+                <table border="1" cellspacing="0" cellpadding="2" align="center">
+                    <form action="" method="post"> <!--form:post를 선택 / table 태그 위쪽에 만들어도 됨-->
+                        <tr>
+                            <td colspan="3" class="title">회원가입</td>
+                            <!-- <td></td>
+                            <td></td> -->
+                        </tr>                        
+                        <tr><!--이름--> <!--100% (td width="16%" 쓰는 것보다 스타일시트를 사용하기)-->
+                            <td class="td2">아이디</td>
+                            <td class="td3"><input type="text" name="mem_id" size="15">
+                                    <input type="button" value="ID중복검사" onclick=""> </td>
+                                    <!-- onclick 이벤트 처리 (자바스크립트에서 자세히 배움) -->
+                            <td class="td4">아이디를 적어 주세요.</td>
+                        </tr>
+                        <tr><!--비밀번호-->
+                            <td>패스워드</td>
+                            <td><input type="password" name="mem_passwd" size="15"></td>
+                            <td>패스워드를 적어주세요.</td>
+                        </tr>
+                        <tr><!--비밀번호 확인-->
+                            <td>패스워드 확인</td>
+                            <td><input type="password" name="mem_repasswd" size="15"></td>
+                            <td>패스워드를 확인합니다.</td>
+                        </tr>
+                        <tr><!--이름-->
+                            <td>이름</td>
+                            <td><input type="text" name="mem_name" size="15"></td>
+                            <td>고객실명을 적어주세요.</td>
+                        </tr>
+                        <tr><!--이메일-->
+                            <td>이메일</td><!--input:text 사용해도 됨-->
+                            <td><input type="email" name="mem_email" size="25"></td>
+                            <td>이메일을 적어주세요.</td>
+                        </tr>
+                        <tr><!--전화번호-->
+                            <td>전화번호</td>
+                            <td><input type="tel" name="mem_tel" size="20"></td>
+                            <td>연락처를 적어 주세요.</td>
+                        </tr>
+                        <tr><!--우편번호 버튼-->
+                            <td>우편번호</td>
+                            <td><input type="text" name="mem_jipcode" size="7">
+                                <input type="button" value="우편번호찾기" onclick=""></td>
+                            <td>우편번호를 검색하세요.</td>
+                        </tr>
+                        <tr><!--주소-->
+                            <td>주소</td>
+                            <td><input type="text" name="mem_address" size="70"></td>
+                            <td>주소를 적어 주세요.</td>
+                        </tr>
+                        <tr><!--직업-->
+                            <td>직업</td>
+                            <td>
+                                <select name="mam_jop" > <!--select=콤보박스 / option*12-->
+                                    <option value="0" required>선택하세요</option>
+                                    <option value="회사원">회사원</option>
+                                    <option value="연구전문직">연구전문직</option>
+                                    <option value="교수학생">교수학생</option>
+                                    <option value="일반자영업">일반자영업</option>
+                                    <option value="공무원">공무원</option>
+                                    <option value="의료인">의료인</option>
+                                    <option value="법조인">법조인</option>
+                                    <option value="종교/언론/예술인">종교/언론/예술인</option>
+                                    <option value="농/축/수산/광업인">농/축/수산/광업인</option>
+                                    <option value="주부">주부</option>
+                                    <option value="무직">무직</option>
+                                    <option value="기타">기타</option>
+                                </select></td>
+                            <td>직업을 선택하세요.</td>
+                        </tr>
+                        <tr><!--전송버튼-->
+                            <td class="td5" colspan="3">
+                                <input type="button" value="회원가입" onclick="">
+                                &nbsp; &nbsp; &nbsp; &nbsp;
+                                <input type="reset" value="다시쓰기">
+                            </td>
+                            <!-- <td></td>
+                            <td></td> -->
+                        </tr>
+                    </form>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. 증감연산자.html</title>
+</head>
+<body>
+    <script>
+        /*
+        ++ : 변수 앞 또는 뒤에 붙일 수 있음 => ++a(전위연산자), a++(후위연산자)
+                                                                ㄴ 변수의 값을 하나 증가시켜라
+        -- : 변수 앞 또는 뒤에 붙을 수 있음 => --b, b--
+                                                                ㄴ 변수의 값을 하나 감소시켜라
+        */
+        let a=10, b=20;
+        document.write("a=>"+a+"<br>"); //10
+        document.write("b=>"+b+"<br>"); //20
+
+        // 선불계산 (a++)     후불계산 (++a)
+        let c=a++; // let c=a; a=a+1
+        document.write("a++=>"+c+"<br>"); //10 c= 10 / a= 11
+
+        let d=++a; //a=a+1; d=a
+        document.write("++a=>"+d+"<br>"); //12
+
+        let e=b--; // let e=b; b=-1;
+        document.write("b--=>"+e+"<br>"); //20 e=20 / b=19
+
+        let f=--b; // let f=b-1; f=b;
+        document.write("--b=>"+f+"<br>"); //18
+    </script>
+</body>
+</html>

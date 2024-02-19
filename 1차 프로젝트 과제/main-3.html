@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">  반응형 웹사이트-->
+    <title>메인페이지(mein-0.html)</title>
+    <!-- 
+        media 속성(반응형) 웹의 크기를 지정할 때 사용 (해상도)
+        screen and (min-width:768px)(최소해상도 픽셀)->768px 해상도 이하이면 main-1.css를 부른다.
+        768px 이상이면 main.css를 부른다. 
+    -->
+<link rel="stylesheet" href="css/main.css" type="text/css"
+        media="screen and (min-width:768px)">
+<link rel="stylesheet" href="css/main-1.css" type="text/css"
+        media="screen and (max-width:767px)">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery.cycle2.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!-- 회사 로고 이미지 링크 -->
+        <header class="hd1"><a href="#"><h1>BOWWOW</h1></a>
+        <nav class="nv1">
+            <div><a href="#" class="main1">MENU</a>
+                <ul class="sub">
+                    <li><a href="#" class="a1">강아지 용품</a>
+                        <ul class="sub1"> 
+                            <li><a href="#">주식</a></li>
+                            <li><a href="#">간식</a></li>
+                            <li><a href="#">패션</a></li>
+                            <li><a href="#">외출</a></li>
+                            <li><a href="#">건강보조제</a></li>
+                            <li><a href="#">리빙</a></li>
+                            <li><a href="#">장난감</a></li>
+                            <li><a href="#">목욕</a></li>
+                            <li><a href="#">라이프</a></li>
+                            <li><a href="#">견주용품</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="a1">고양이 용품 </a></li>
+                    <li><a href="#" class="a1">라이프 용품</a></li>
+                    <li><a href="#" class="a1">할인한 상품</a></li>
+                </ul>
+            </div>
+            <div><a href="#" class="main2">EVENT</a></div>
+            <div><a href="aboutus.html" class="main3">ABOUT US</a></div>
+        </nav>
+        <nav class="nv2">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#">My Page</a></li>
+            </ul>
+        </nav>
+        </header>
+        <header class="hd2"><img src="img/hd2.PNG" alt="mb"></header>
+        <!-- pc상태에서의 이미지 슬라이드 쇼 -->
+        <div class="cycle-slideshow">
+            <img src="img/bowwow1.png" alt="sc-3" width="1000px">
+            <img src="img/bowwow2.png" alt="sc-2" width="1000px">
+            <img src="img/bowwow3.jpg" alt="sc-1" width="1000px">
+        </div>
+        <section class="sc2"><img src="img/sc2.PNG" alt="sc2"></section>
+        <section class="sc3"><img src="img/sc3.PNG" alt="sc3"></section>
+        <article class="at1">
+            <h2>BEST SELLER</h2>
+            <div class="d1">
+                <figure> 
+                    <a href="#">
+                    <img src="img/dingdog.jpg" alt="at-1">
+                    <figcaption class="fc1">
+                        <img src="./img/at1-img5.png">
+                        딩독 단팥빵 (노즈워크) 3,000원</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- d2 -->
+            <div class="d2">
+                <figure>
+                    <a href="#">
+                    <img src="img/noutti.jpg" alt="at-2">
+                    <figcaption class="fc2">
+                        <img src="./img/at1-img6.png">
+                        누우띠 로맨틱 플라워 59,000원</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- d3 -->
+            <div class="d3">
+                <figure>
+                    <a href="#">
+                    <img src="img/other.jpg" alt="at1-img3">
+                    <figcaption class="fc3">
+                        <img src="./img/at1-img7.png">
+                        아더마스 프로틴볼 치즈볼 5,000원</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </article>
+        <!--  -->
+        <article class="at2">
+            <h2>TIME SALE</h2>
+            <img src="img/my.jpg">
+            <!-- div#dv1>h6{온라인 전용 제품 50% 할인 찬스!} -->
+            <div id="dv1"><h6>온라인 전용 제품 50% 할인 찬스!</h6><br>
+                <h5>마이플러피 강아지빗 </h5><br>
+                <h6>8000원 -> 4000원</h6><br>
+                <time>12:00:00</time><br>
+                <button id="btn1">장바구니</button>
+                <button id="btn2">제품 상세 보기</button>
+            </div>
+        </article>
+        <article class="at11">
+            <h2><img src="img/star.png" id="star"> 이번주 신상품</h2>
+            <!-- d11 -->
+            <div class="d11">
+                <figure>
+                    <a href="#">
+                    <img src="img/d11.jpg" alt="at-1">
+                    <figcaption class="fc11">
+                        바이봉 라이트 베어 1.5m 13,000원</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- d22 -->
+            <div class="d22">
+                <figure>
+                    <a href="#">
+                    <img src="img/d22.jpg" alt="at-2">
+                    <figcaption class="fc22">
+                        바이봉 라이트 베어 하네스 23,000원</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- d33 -->
+            <div class="d33">
+                <figure>
+                    <a href="#">
+                    <img src="img/d33.jpg" alt="at1-img3">
+                    <figcaption class="fc33">
+                        아젤리아 카눌레 쿠션 115,000원</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- d44 -->
+            <div class="d44">
+                <figure>
+                    <a href="#">
+                    <img src="img/d44.jpg" alt="at1-img3">
+                    <figcaption class="fc44">
+                        알파아이콘 독가드에어 310,900원</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <!-- d55 -->
+            <div class="d55">
+                <figure>
+                    <a href="#">
+                    <img src="img/right.png" alt="at1-img3"></a>
+                </figure>
+            </div>
+        </article>
+
+        <article class="at3"> 
+            <embed src="vd/main_vd.mp4" [width:"450px" height:"300px"]>
+            </article>
+        <article class="at4"><img src="img/reviwu.png" alt="review"></article>
+        <!-- footer.ft1>nav*2 -->
+        <footer class="ft1">
+            <nav class="nv3">
+                <ul>
+                    <li><a href="#">서비스 이용약관</a></li>
+                    <li class="l1">|</li>
+                    <li><a href="#">개인정보처리 방침</a></li>
+                    <li class="l1">|</li>
+                    <li><a href="#">고객서비스 센터</a></li>
+                    <li class="l1">|</li>
+                    <li><a href="#">영상정보처리기 운영방침</a></li>
+                </ul><br>
+            </nav>
+            <nav class="nv4">
+                <ul>
+                    <li>facebook : test@navet.com</li>
+                    <li>e-mail : test@navet.com</li>
+                    <li>Tel : 010.0000.0000</li>
+                    <li>Fax : 0.000.0000</li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

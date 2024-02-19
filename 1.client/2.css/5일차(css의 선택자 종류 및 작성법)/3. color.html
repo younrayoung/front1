@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. color.html(색깔을 적용시키는 방법 3가지)</title>
+    <style>
+        h2#text1{
+            color:red; /* 영문글자(자동 완성 기능*/
+            background-color: black;
+        }
+        h2#text2{
+            color: #FF0000;
+            background-color: #000000; 
+            /*검정색 #000000 <-> #255255255 흰색
+                0,0,0 검정색 / 255,255,255 흰색 / 255,0,0 레드 / 
+                0,255,0 그린 / 0,0,255 블루 / 255,255,0 노랑
+            */
+        }
+        h2#text{ /*우선순위 (인라인(style>embedd>외부에서 불러옴(link or @impost))*/
+            color:rgb(255, 0, 0);
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body><!--h2#text$*3 => text1~text3-->
+    <h2 id="text1">color name:red</h2>
+    <h2 id="text2">16진수 #RGB(0~255)</h2>
+    <h2 id="text3" style="background: rgb(255, 255, 0);color:#FF0000">RGB 함수:rgb(255,0,0)</h2>
+</body>
+</html>
+
+thdms0903
+010.3713.2653

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input.html</title>
+    <style>
+        div{
+            font-size: 14px;
+        }
+        .mein{
+            border: 1px dotted orange;
+        }
+        textarea{
+            height: 100px;
+            border: 1px dotted orange;
+        }
+        .butt{
+            color: white;
+            background: black;
+            border: 1px ;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form name="text" method="post" action="">
+            이름: <input type="text" class="mein" name="name" size="20"><br>
+            주소: <input type="text" class="mein" name="adrs" size="50"><br>
+            암호: <input type="password" class="mein" name="" id="" size="10">
+            계절: <input type="checkbox" name="" id="">봄
+                    <input type="checkbox" name="" id="">여름
+                    <input type="checkbox" name="" id="">가을
+                    <input type="checkbox" name="" id="">겨울 <br>
+            국가: <input type="radio" name="country" id="">한국
+                    <input type="radio" name="country" id="">중국
+                    <input type="radio" name="country" id="">일본 <p></p>
+
+                    <select name="" id="">
+                        <option value="">프로그래머</option>
+                        <option value="" selected>DB관리자</option>
+                        <option value="">웹디자인</option>
+                    </select><p></p>
+
+                    <!-- 메모 -->
+                    <textarea name="" cols="40" rows="6" ></textarea><p></p>
+            파일첨부: <input type="file" value="파일선택"><p></p>
+                    <input type="submit" class="butt" value="회원가입">
+                    <input type="submit" class="butt" value="회원가입2">
+                    <input type="reset" class="butt" value="입력취소">
+        </form>
+    </div>
+</body>
+</html>

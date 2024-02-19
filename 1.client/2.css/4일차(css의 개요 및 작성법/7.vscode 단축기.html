@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.vscode 단축기.html</title>
+</head>
+<body>
+        <h3>visual studio code에서 자주 사용되는 단축기</h3>
+        <ol>
+            <li>html 문서 템플릿 작성법 <br> : html파일 작성 후 !+enter or html:5+enter</li><br>
+            <li>태그 작성하는 방법<br> : 태그 이름+enter => 자동 완성 기능 / (ex) div+enter
+                <div></div><br>
+            </li>
+            <li>태그를 여러개 생성하는 방법 <br>: 태그명*n(반복할 수) (ex) div*2  
+                    <div></div>
+                    <div></div> 
+                    </li><br>
+            <li>태그 중첩해서 생성하는 방법 <br>: 태그명>태그명2>태그명3  (ex) div>ul>ol*3 
+                <div>
+                    <ul>
+                        <ol></ol>
+                        <ol></ol>
+                        <ol></ol>
+                    </ul>
+                </div>
+            </li><br>
+            <li>인접한 태그 생성하는 방법 <br>: 태그명+태그명2+태그명3  (ex) div+h1+h2+h3 
+                <!--<div></div>
+                <h1></h1>
+                <h2></h2>
+                <tr></tr>-->
+            </li><br>
+            <li>아이디 선택자 설정 <br>: 태그명#아이디명 (ex) div#name
+                <div id="name"></div>
+            </li><br>
+            <li>클래스 선택자 설정 <br>: 태그명.아이디명 (ex) div.test 
+                <div class="test"></div>
+            </li><br>
+            <li>태그{입력하고 싶은 텍스트}입력 후 enter/Tab (ex) p{안녕하세요} 
+                <!--<p>안녕하세요</p>-->
+            </li><br>
+            <li>숫자 삽입(숫자 1씩 자동 증가) (ex) div#name$*5 (아이디, 클래스, 텍스트 사용)
+                <div id="name1"></div>
+                <div id="name2"></div>
+                <div id="name3"></div>
+                <div id="name4"></div>
+                <div id="name5"></div>
+            </li><br>
+            <li>^입력시 상위계층으로 이동 <br>
+                : 중첩된 상황에서 한단계 상위 계층으로 이동할 때 사용, 여러번 사용 가능
+                                            (ex) div>ul>li^p 
+                                                <!--<div>
+                                                    <ul>
+                                                        <li></li>
+                                                    </ul>
+                                                    <p></p>
+                                                </div>-->
+            </li><br>
+            <li>^^ : 두 단계 상위계층으로 이동 (ex) div>ul>li^^p 
+                <!--<div>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <p></p>
+            </li>--><br>
+            <li>(태그...) 그룹으로 묶는 경우 : (ex) div>(ul>li)+(ol>li) 
+                <!--<div>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <ol>
+                        <li></li>
+                    </ol>
+                </div>-->
+            </li>
+            <br>
+            <li>자동 완성 기능 (동시에 div태그에 id와 class 선택자를 만드는 방법(div#myid.classA)) <br>
+                : (ex) div#myid.classA.classB 입력 후 enter <br><!--복수 선택자-->
+                <div id="myid" class="classA classB"></div>
+            </li>
+        </ol>
+</body>
+</html>

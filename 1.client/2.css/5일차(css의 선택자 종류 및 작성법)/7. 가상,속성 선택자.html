@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7. 가상 선택자, 속성 선택자.html</title>
+    <style>
+        /*
+            가상 선택자 => 형식) 태그명:link(많이 사용) / :visited / :active 
+                                                    :hover(마우스로 특정태그를 갖다댈때, 가장 많이 쓰음)
+        */
+        a:link{  /* 링크한 문자열의 스타일 적용  */
+                text-decoration: none;
+                color:red; /* 크롬에서만 색깔적용이 잘 안듣는 편, 다른브라우저는 됨
+                                        Edge에서는 빨강색->클릭->파랑색으로 변경됨 */
+        }
+        a:visited{  /* 이미 클릭한 경우의 색(이미 방문한 적인) */
+                color:blue;
+        }
+        a:hover{  /*  마우스를 갖다될 때 어떻게 처리할 것 인가?*/
+                color:orange;
+                text-decoration: underline;
+        }
+        a:active{  /* 링크 문자열을 누르고 있는 동안 어떻게 할 것 인가?  */
+                background-color: green;
+                text-decoration:line-through;
+        }
+        /* 속성선택자가 필요한 이유 
+                ㄴ 태그 이름으로는 서로를 구분하기가 어려운 경우
+                    -> 속성이름 또는 속성값으로 서로를 구분 O
+                ㄴ 형식) 태그명[속성명] {속성명:값~} => 속성명을 가지고 적용 O
+                            태그명[속성명=값] {속성명;값~}=> 특정 속성값을 가지고 태그를 구분해서 스타일 적용 O
+        */
+        input[type=text]{background: yellow;}
+
+    </style>
+</head>
+<body>
+    <h2>HyperText link 속성</h2>
+    <!--a{네이버}*2-->
+    <a href="https://www.naver.com">네이버</a><br>
+    <a href="http://www.google.com">구글</a>
+    <hr>
+    <form>
+        이름 : <input type="text" name="userid" id=""><br>
+        암호 : <input type="password" name="userpwd" id="">
+    </form>
+</body>
+</html>

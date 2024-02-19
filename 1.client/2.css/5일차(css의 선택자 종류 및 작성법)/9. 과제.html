@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 상품 주문서 </title>
+    <style>
+        body{ width: 600px; }
+        h1{text-align: center;}
+
+        ul>li>label{
+            font-weight: bold;
+            width: 80px;
+            display: inline-block;
+        }
+        /* ul{
+            line-height : 30px;
+        } */
+
+        ul>li{
+            list-style:none;
+            margin: 15px 15px 15px 15px;
+        }
+
+        fieldset{
+                margin:15px 10px 15px 10px;
+        }
+
+        legend{
+                font-weight: bold;
+                font-size: 18px;
+                color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>상품주문서</h1>
+        <form>
+            <fieldset>
+                <legend>개인 정보</legend>
+                    <ul class="mein">
+                        <li>
+                            <label for="name">이름</label>
+                            <input type="text" name="name" id="name" placeholder="여백없이 입력" required>
+                        </li>
+                        <li>
+                            <label for="tel">연락처</label>
+                            <input type="tel" name="tel" id="tel" placeholder="연락가능한 번호" required>
+                        </li>
+                    </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>배송지 정보</legend>
+                    <ul class="mein">
+                        <li>
+                            <label for="address">주소</label>
+                            <input type="text" name="address" id="address" size="40" required>
+                        </li>
+                        <li>
+                            <label for="tel">전화번호</label>
+                            <input type="tel" name="tel2" id="tel2" required>
+                        </li>
+                        <li>
+                            <label for="memo">메모</label>
+                            <textarea name="memo" id="memo" cols="37" rows="3" >
+                            </textarea>
+                        </li>
+                    </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>주문 정보</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" >과태말라 안티구아 (100g)
+                            <input type="number" name="anti" id="anti" value="0"
+                                            min="0" max="5">개
+                        </li>
+                        <li>
+                            <input type="checkbox" >인도네시아 만델링 (100g)
+                            <input type="number" name="man" id="man" value="0"
+                                            min="0" max="5">개
+                        </li>
+                        <li>
+                            <input type="checkbox" >탐라는도다(블렌딩) (100g)
+                            <input type="number" name="tam" id="tam" value="0"
+                                            min="0" max="5">개
+                        </li>
+                    </ul>
+            </fieldset>
+            <div>
+                <center>
+                    <input type="submit" value="주문하기">
+                    <input type="reset" value="다시 작성">
+                </center>
+            </div>
+        </form>
+</body>
+</html>

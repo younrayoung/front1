@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. callback함수 작성법.html</title>
+</head>
+<body>
+    <script>
+        /*
+            콜백함수=>함수(caller)->다른 함수를 부르는 경우(work function)
+                                                매개변수가 전달(숫자, 문자열, 논리적인 값)되는게 아니라 함수 이름이 전달 됨.
+                                                매개변수 형태로 함수이름이 전달이 되어서 호출괸 함수내부에서
+                                                실행이 되는 함수(=콜백함수)
+        */
+        function callFun(other){ //매개변수 있음.  other=> ?  직원=>다른 동료의 일도 같이 실행 O
+            for(let i=0;i<10;i++){ // isms 블럭변수(for문에서만 존재)
+                    other(); // 함수명() 또는 함수명(x,y,z) => test()
+                                // test() 함수내부에서 다른 특정함수를 5번 반복해서 실행
+            }
+        }
+        /*익명함수
+        let test=function(){
+            console.log('Happy day!');
+        } */
+
+        function test(){ //매개변수 없음
+            console.log('Happy day!');
+        }
+        //let test=function(){console.log('Happy day!');} 익명함수
+        callFun(test); // :함수이름 전달 / 문자-callFun("test")  숫자-callFun(23)  논리적인값-callFun(true)
+        console.log("-----함수내부에서 익명함수형태로 함수이름을 전달받아서 실핼"); //react
+        callFun(function(){
+            console.log('Happy day!');
+        });
+        //=================================================
+        //리엑트에서 화살표 함수 : 함수 X  ()=>{함수내용}
+        callFun(()=>{
+            console.log('화살표함수를 이용해서 익명함수호출됨!');
+        });
+        //=================================================
+    </script>
+</body>
+</html>

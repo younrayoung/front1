@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. 계산문제.html</title>
+    <script>
+        /*
+            자바스크립트 코딩방식->window(생략가능).document.폼객체이름(myForm).입력양식객체명.속성 or ~속성=값
+        */
+        function sum(){//문자열, 숫자, 논리적인 값, 객체도 전달 O
+            //alert("sum()호출"); -> 오타낫는지 확인하는 방법
+            //alert(document.myForm.kor.value);
+            let k=document.myForm.kor.value; //"70"
+            let e=document.myForm.eng.value;//"80"
+            let m=document.myForm.mat.value;//"90"
+            //let total=parseInt(k)+parseInt(e)+parseInt(m);//"70"+"80"+"90"="708090"=>문자를 숫자로 변환 parseInt("70")=>70
+            let total=Number(k)+Number(e)+Number(m); //자바 =>Wrapper 클래스(숫자도 객체)
+            //소수점 변환 parseFloat"72.5"=>72.5
+            alert('합계는 =>'+total);
+        }
+    </script>
+</head>
+<body>
+    <!-- form>(input:text*3)+input:button+input:reset -->
+    <form name="myForm" action="sum.jsp">
+        국어 : <input type="text" name="kor" placeholder="국어점수" required><br>
+        영어 : <input type="text" name="eng" placeholder="영어점수" required><br>
+        수학 : <input type="text" name="mat" placeholder="수학점수" required><p></p>
+        <input type="button" value="합계" onclick="sum()">
+        <input type="reset" value="지우기">
+    </form>
+    <script>
+
+    </script>
+</body>
+</html>

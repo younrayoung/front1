@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. 배정연산자(대입연산자).html</title>
+</head>
+<body>
+    <script>
+        let a=30;
+        // 형식) 변수+=계산할 값 => (-=),(+=), (/=),(%=)
+        // a++ =>  a=a+1  => a+=1
+        // a--   =>  a=a-1   => a-=1
+        // 10진수 =>  128  64  32  16  8  4  2  1 => 000001010=10 이것만이라도 알아두기
+        //a=a+10 같은 말이지만 a+=10이 연산속도가 빠름 (a라는 연산자가 1개기 때문에 과정이 줄어듦)
+        document.write("a=>",a,"(a+=10)=>",a+=10,"<br>") //a=a+10 =40
+        document.write("a=>",a,"(a-=10)=>",a-=10,"<br>") //a=a-10 =30
+        document.write("a=>",a,"(a*=10)=>",a*=10,"<br>") //a=a*10 =300
+        document.write("a=>",a,"(a/=10)=>",a/=10,"<br>") //a=a/10 = 30
+        document.write("a=>",a,"(a%=10)=>",a%=10,"<br>") //a=a%10 = 0
+    </script>
+</body>
+</html>

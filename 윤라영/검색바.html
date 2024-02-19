@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .searchbar{
+            border:1px solid black;
+            width: 400px;
+            border-radius: 40px;
+            display: flex;
+            height: 65px;
+            padding: 10px;
+            box-sizing: border-box;     
+            padding-left: 50px;                
+            
+
+            position: relative;
+        }
+
+        .searchbar input{
+            height: 30px;
+            border:0px;            
+            outline: 0px;
+
+            position: absolute;
+            bottom: 10px;
+            
+        }
+
+        .searchbar .btn{
+            background-color: aqua;
+            width: 50px;
+            height:50px;
+            position: absolute;
+            right: 20px;
+            background-image: url("https://search.pstatic.net/sunny/?src=https%3A%2F%2Fwww.shutterstock.com%2Fimage-vector%2Fsearch-flat-line-icon-web-260nw-2194172565.jpg&type=a340");
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="searchbar">
+          <input  placeholder="검색어를 입력하세요">
+          <div class="btn"  onclick="javascript:alert('검색어를 입력하세요')"></div>
+    </div>
+    
+</body>
+</html>

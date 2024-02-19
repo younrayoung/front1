@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8. string 예제.html</title>
+</head>
+<body>
+    <script>
+        //입력받은 문자열을 전달받아서 처리해주는 함수
+        function StringPrint(s){
+            //1. concat : 문자열 결합
+            document.write("s.concat('test')=>"+s.concat("test")+"<br>");
+
+            //2. substring (시작인덱스번호 O, 종료인텍스번호-1(바로 앞번호까지))
+            document.write("s.substring(1,4)=>"+s.substring(1,4)+"<br>");//1~3까지의 특정문자열 뽑아라
+            
+            //3. 시작인텍스번호부터 문자열 끝까지
+            document.write("s.substring(1)=>"+s.substring(1)+"<br>");//hello를 입력했을때 -> ello
+            
+            //4. toUpperCase() 대문자로 변환 <-> toLowCase() 소문자로 변환
+            document.write("s.toUpperCase()=>"+s.toUpperCase()+"<br>");//HELLO
+            
+            //5. 특정문자열을 변경->replace(변경전 단어, 변경후 단어)
+            document.write("s.replace('l','t')=>"+s.replace('l','t')+"<br>");
+            
+            //6. 문자열의 길이를 구하는 경우=> 문자열.length =>속성명   자바는 (문자열.length())
+            document.write("s.length=>"+s.length+"<br>");//s.length()는 자바 ok
+            
+            //7. 문자열중에서 특정위치에 있는 문자출력=>charAt(인덱스번호)
+            document.write("s.charAt(2)=>"+s.charAt(2)+"<br>"); // hello 중ㅣ 출력
+            
+            //8.특정문자가 몇번째 인덱스번호에 위치해 있는가? indexOf('찾는 문자')=>인덱스 번호
+            document.write("s.indexOf('l')=>"+s.indexOf('l')+"<br>"); // 2 -> 앞에서 검색 처음 찾은번호 리턴
+            
+            //9.뒤에서 찾는 경우 -> lastIndexOf('찾는 문자')=>뒤에서 찾지만 인덱스번호는 앞에서 계산
+            document.write("s.lastIndexOf('l')=>"+s.lastIndexOf('l')+"<br>");
+            
+            //10. 공백제거 -> trim()=>"abcd     " 공백도 글자수로 인정함. 공백제거해서 "abcd"로 만들기
+            document.write("s.trim()=>"+s.trim()+"<br>");
+
+            //11. split 메서드 특정구분자를 이용해서 분리시키는 메서드
+            document.write("s.split(',')=>"+s.split(",")+"<br>");
+            let t=s.split(',');
+            for(let i=0;i<t.length;i++)
+                document.write("t=>"+t[i]+"<br>");
+        }
+        let input=prompt("아무 문자열이나 입력하세요!");
+        StringPrint(input); //문자열 전달
+
+    </script>
+</body>
+</html>

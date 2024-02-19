@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.semantic(4).html</title>
+</head>
+<body>
+        <!--JQuery라는 문법(공지사항 게시판) 자주 사용자가 문의하는 질문을 따로 답을 달아주는 페이지-->
+        <h3>details와 summary</h3>
+        Q &amp; A 리스트
+        <hr>
+        <!--
+            details태그=>상세한 정보를 담고 있는 시멘틱 블로태그=>화살표로 표시=>
+                                클릭하면(질문 나왔다가 안나왔다 함)
+            summary태그->details로 구성된 블록의 제목을 표현한다.
+
+        -->
+        <details>
+            <summary>Question 1</summary>
+            <p>IT 입문시 가장 기본적으로 배워야할 언어?</p>
+        </details>
+        <details>
+            <summary>Answer 1</summary>
+            <p>HTML5,CSS3,JavaScript</p>
+        </details>
+        <p>
+            <details>
+                <summary>Question 2</summary>
+                <p>Database를 사용하기위해서 기본적으로 배우는 명령어?</p>
+            </details>
+            <details>
+                <summary>Answer 2</summary>
+                <p>SQL(DDL,DML,DCL)을 배웁니다. </p>
+            </details>
+
+        </p>
+
+</body>
+</html>

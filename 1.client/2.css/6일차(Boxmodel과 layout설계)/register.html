@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register.html</title>
+    <style>
+        .mein{
+            font-size: 12px;
+        }
+
+        .cent{
+            text-align: center;
+            padding: 2px;
+        }
+
+        .m{
+            width: 100px;
+            padding: 2px;
+        }
+
+        .in{
+            width:400px;
+            padding: 2px;
+        }
+
+        .text{
+            width:150px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <form post="RegiserProc.jsp">
+                        <table class="mein" border="1" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td class="m" colspan="3">&nbsp;</td>
+                                <!-- <td></td>
+                                <td></td> -->
+                            </tr>
+                            <tr>
+                                <td class="m">아이디</td>
+                                <td class="in"><input type="text" size="15px">
+                                        <input type="submit" value="ID중복검사"></td>
+                                <td class="text">아이디를 적어주세요.</td>
+                            </tr>
+                            <tr>
+                                <td class="m">패스워드</td>
+                                <td class="in"><input type="text" size="15px"></td>
+                                <td class="text">패스워드를 적어주세요.</td>
+                            </tr>
+                            <tr>
+                                <td class="m">패스워드 학인</td>
+                                <td class="in"><input type="text" size="15px"></td>
+                                <td class="text">패스워드를 확인합니다.</td>
+                            </tr>
+                            <tr>
+                                <td class="m">이름</td>
+                                <td class="in"><input type="text" size="15px"></td>
+                                <td class="text">고객실명을 적어주세요.</td>
+                            </tr>
+                            <tr>
+                                <td class="m">이메일</td>
+                                <td class="in"><input type="email" size="25px"></td>
+                                <td class="text">이메일을 적어주세요.</td>
+                            </tr>
+                            <tr>
+                                <td class="m">전화번호</td>
+                                <td class="in"><input type="tel" size="20px"></td>
+                                <td class="text">연락처를 적어 주세요.</td>
+                            </tr>
+                            <tr>
+                                <td class="m">우편번호</td>
+                                <td class="in"><input type="text" size="10px">
+                                    <input type="submit" value="우편번호찾기"></td>
+                                <td class="text">우편번호를 검색 하세요.</td>
+                            </tr>
+                            <tr>
+                                <td class="m">주소</td>
+                                <td class="in"><input type="text" size="50px"></td>
+                                <td class="text">주소를 적어 주세요.</td>
+                            </tr>
+                            <tr>
+                                <td class="m">직업</td>
+                                <td class="in">
+                                    <select name="">
+                                        <option required>선택하세요</option>
+                                        <option >회사원</option>
+                                        <option >연구전문직</option>
+                                        <option >교수학생</option>
+                                        <option >일반자영업</option>
+                                        <option >공무원</option>
+                                        <option >의료인</option>
+                                        <option >법조인</option>
+                                        <option >종교/언론/예술인</option>
+                                        <option >농/축/수산/광업인</option>
+                                        <option >주부</option>
+                                        <option >무직</option>
+                                        <option >기타</option>
+                                    </select>
+                                </td>
+                                <td class="text">직업을 선택 하세요.</td>
+                            </tr>
+                            <tr>
+                                <td class="cent" colspan="3">
+                                    <input type="submit" value="회원가입">
+                                    <input type="reset" value="다시쓰기">
+                                </td>
+                                <!-- <td></td>
+                                <td></td> -->
+                            </tr>
+                        </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility 예제 (display:none)</title>
+    <style>
+        /* 
+            공통점 : 둘다 화면에 안보임.
+            차이점   -visibility 속성=> 해당영역이 보이지 않을 뿐 화면에 그대로 빈공간으로 유지
+                                                visibility:hidden <-> visible
+                        -display 속성은 영역 자체까지 사라지기 때문에 인접한 요소의 레이아웃에 영향을 미칠 수 있다.
+        */
+        div{
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            border: 1px solid black;
+            float: left; /* 왼쪽->오른쪽으로 배치 */
+            margin: 5px;
+            /*text-align: center; /* 가로방향 */
+            /* vertical-align: middle; 세로방향 */
+            padding-left: 75px;
+            padding-top: 60px;
+
+        }
+        /* .spuare.sql2{display:none; /* 영역자체가 사라지고 뒤에있던게 땡겨짐 }*/
+        .spuare.sql2{visibility: hidden; /* 영역은 존재하는데 화면에는 투명하게 비어보임 */ }
+        p{clear: both;}
+        .spuare.sql22{display:none;}
+    </style>
+</head>
+<body>
+    <h2>visibility: hidden을 사용했을 때</h2>
+    <!-- div.spuare.sql$*3 -->
+    <div class="spuare sql1">A</div>
+    <div class="spuare sql2">B</div>
+    <div class="spuare sql3">C</div>
+
+    <p><br><br><hr></p>
+    <h2>display:none을 사용했을 때</h2>
+    <!-- div.spuare.sql$*3 -->
+    <div class="spuare sql11">A</div>
+    <div class="spuare sql22">B</div>
+    <div class="spuare sql33">C</div>
+</body>
+</html>

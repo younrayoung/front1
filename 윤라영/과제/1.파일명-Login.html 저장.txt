@@ -1,0 +1,32 @@
+1.파일명->Login.html 저장
+2.<center>태그 사용
+3.form태그
+   아이디 name="id"
+   비밀번호 name="pwd"
+4.버튼 둘다 일반버튼
+5.테이블태그+input box
+   4*2행
+
+p160 CSS 스타일 시트 구성
+
+셀렉터?
+p162 <style>
+p163  외부 스타일시트 파일
+          불러오기
+
+p169 셀렉터
+p170 class 셀렉터
+p171 id 셀렉터
+p173 가상클래스 셀렉터
+=============
+ Sangpum.html-> 상품주문서
+		<label>, fieldset, legend ,,,
+
+1주차 주말 예습할 내용
+
+가상클래스 선택자
+예제 179페이지
+p184 박스모델 중요
+p188 border
+
+div, span 태그의 차이점? 이론숙지

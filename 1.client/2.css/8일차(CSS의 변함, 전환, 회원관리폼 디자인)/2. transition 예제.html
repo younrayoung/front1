@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2. transition 예제.html</title>
+    <!-- 
+        transition=>css의 특정속성을 변경->애니메이션 효과부텨(초,속도)
+     -->
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            margin: 50px;
+            transition: 
+                    width 1s,
+                    background 1s;
+            /* transition-property: width, background; 애니메이션 적용시킬 속성
+            transition-duration:1s; 유지시간 */
+        }
+        .box:hover{ /* 마우스를 갖다 댈 때 */
+            width: 300px; /* 100px-> 300px로 늘어남 */
+            background:blue;
+        }
+        span{
+            transition: font-size 5s;
+        }
+        span:hover{
+            /* 5초에 걸쳐서 500%까지 글자커지는 애니메이션 효과 */
+            font-size: 500%;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <hr>
+    <p><span>글자</span></p>
+</body>
+</html>
